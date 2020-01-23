@@ -23,12 +23,14 @@ body {
 /*style-navigation*/
 .main-nav {
   padding-top: 76px;
-  margin-bottom: 102px;
+  padding-bottom: 102px;
 }
 .main-menu {
   list-style: none;
   margin: 0;
-  padding-left: 181px;
+  padding: 0;
+  text-align: center;
+  font-size: 0;
 }
 
 .main-menu li {
@@ -36,9 +38,11 @@ body {
 }
 
 .main-menu a {
+  display: block;
   color: #626262;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .main-menu a:hover {
