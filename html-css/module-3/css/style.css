@@ -73,9 +73,6 @@ body {
   margin-right: 0;
 }
 
-.team-list :nth-child(n + 5) {
-  margin-bottom: 0;
-}
 
 .team-list img {
   margin-bottom: 30px;
@@ -112,7 +109,6 @@ body {
 }
 
 .main-btn {
-  margin: 52px 0 0 358px;
   padding: 20px 35px;
   background-color: #ffffff;
   border: 1px solid #626262;
@@ -120,4 +116,6 @@ body {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 20px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
