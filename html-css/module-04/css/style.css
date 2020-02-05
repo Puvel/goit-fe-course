@@ -1,0 +1,251 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #555252;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.page-header {
+  padding: 38px 0 105px;
+}
+.site-logo {
+  text-decoration: none;
+  float: left;
+}
+
+.site-logo h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #555252;
+}
+
+.site-logo h1::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+/*site-navigation*/
+.site-navigation {
+  float: right;
+  width: 467px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 11px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.site-navigation li {
+  float: left;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-navigation a {
+  color: #0f0101;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #1abc9c;
+}
+
+/*products-section*/
+.products-section-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 32px;
+  color: #515151;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 92px;
+}
+.products-section-title::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 31px;
+  content: "";
+}
+
+.products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 104px;
+}
+
+.products-list-item {
+  width: 255px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.products-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.products-list-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.products-list-item img {
+  float: left;
+}
+
+.products-title {
+  background-color: #323232;
+  width: 201px;
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  float: left;
+}
+
+.price-item {
+  background-color: #8c8c8c;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.products-list-item a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.products-list-item:hover p,
+.products-list-item a:focus p {
+  background: linear-gradient(#1abc9c 80%, #7fd9c7);
+}
+
+/*blog-section*/
+
+.blog-section-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 32px;
+  color: #515151;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.blog-section-title::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-top: 31px;
+  content: "";
+}
+
+.blog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 82px;
+}
+
+.blog-list-item {
+  width: 350px;
+  float: left;
+}
+
+.blog-list-item img {
+  margin-bottom: 11px;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.blog-title::after {
+  display: block;
+  width: 137px;
+  height: 4px;
+  background-color: #1abc9c;
+  margin-top: 15px;
+  content: "";
+}
+
+.blog-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.blog-list-item p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.blog-list-item button {
+  background-color: #1abc9c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 13px 43px 16px;
+  cursor: pointer;
+}
