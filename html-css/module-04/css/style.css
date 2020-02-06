@@ -27,7 +27,7 @@ body {
 }
 
 .page-header {
-  padding: 38px 0 105px;
+  padding-top: 38px;
 }
 .site-logo {
   text-decoration: none;
@@ -111,7 +111,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 104px;
 }
 
 .products-list-item {
@@ -171,6 +170,9 @@ body {
 }
 
 /*blog-section*/
+.blog {
+  padding-bottom: 82px;
+}
 
 .blog-section-title {
   margin: 0;
@@ -199,7 +201,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 82px;
 }
 
 .blog-list-item {
@@ -240,12 +241,26 @@ body {
 
 .blog-list-item button {
   background-color: #1abc9c;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.blog-link {
+  display: block;
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   color: #ffffff;
-  border: none;
-  border-radius: 3px;
+  text-decoration: none;
   padding: 13px 43px 16px;
-  cursor: pointer;
+}
+
+.blog-link:hover,
+.blog-link:focus {
+  color: #000000;
+}
+
+.content {
+  padding-top: 104px;
 }
