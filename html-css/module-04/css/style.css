@@ -239,21 +239,16 @@ body {
   margin-bottom: 12px;
 }
 
-.blog-list-item button {
-  background-color: #1abc9c;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
 .blog-link {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   color: #ffffff;
   text-decoration: none;
   padding: 13px 43px 16px;
+  background-color: #1abc9c;
+  border-radius: 3px;
 }
 
 .blog-link:hover,
