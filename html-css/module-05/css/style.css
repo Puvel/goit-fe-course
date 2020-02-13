@@ -257,6 +257,7 @@ body {
 .overlay {
   background-color: rgba(0, 0, 0, 0.55);
   border: 10px solid rgba(255, 255, 255, 0.55);
+  background-clip: padding-box;
   position: absolute;
   left: 0;
   top: 0;
@@ -268,8 +269,7 @@ body {
 
 .overlay-list {
   width: 166px;
-  height: 106px;
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -342,31 +342,5 @@ body {
 }
 
 .main-footer a {
-  color: #fefefe;
-}
-
-.main-footer a:hover,
-.main-footer a:focus {
   color: #46bfa9;
 }
-
-.BUTTON {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1600px;
-  height: 1455px;
-  z-index: 29;
-}
-
-/* .Rectangle_53 {
-  border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  position: absolute;
-  left: 575px;
-  top: 1035px;
-  width: 48px;
-  height: 48px;
-  z-index: 27;
-} */
