@@ -378,6 +378,7 @@ body {
   padding-left: 10px;
 }
 
+.input-area,
 .input-area::placeholder {
   font-size: 15px;
   line-height: 24px;
@@ -396,6 +397,6 @@ body {
   text-transform: uppercase;
   border: none;
   background-color: var(--main-color);
-  padding: 11px 33px;
+  padding: 12px 33px 11px;
   margin-left: -5px;
 }
