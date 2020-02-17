@@ -1,19 +1,10 @@
+@import url(./fonts.css);
+
 :root {
   --font-montserrat: "Montserrat", Arial, sans-serif;
   --font-roboto-slab: "Roboto Slab", "Times New Roman", serif;
   --font-noto-serif: "Noto Serif", "Times New Roman", serif;
   --main-color: rgb(254, 209, 54);
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 
 html {
@@ -49,7 +40,7 @@ body {
 }
 
 .conteiner {
-  width: 940px;
+  width: 58.75rem;
   margin: 0 auto;
 }
 
@@ -58,8 +49,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 44px;
-  padding-left: 7px;
+  padding-top: 2.75rem;
+  padding-left: 0.4375rem;
 }
 
 .site-logo {
@@ -67,14 +58,14 @@ body {
 }
 
 .site-navigation-list {
-  width: 485px;
+  width: 30.3125rem;
   display: flex;
   justify-content: space-between;
 }
 
 .site-navigation-link {
-  font-size: 14px;
-  line-height: 41px;
+  font-size: 0.875rem;
+  line-height: 2.5625rem;
   color: rgb(34, 34, 34);
   font-weight: 700;
   text-transform: uppercase;
@@ -87,28 +78,28 @@ body {
 
 /*********MAIN-SECTION*******/
 .services {
-  padding-top: 116px;
-  padding-bottom: 118px;
+  padding-top: 7.25rem;
+  padding-bottom: 7.375rem;
 }
 
 .section-title {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .section-discription {
-  font-size: 16px;
+  font-size: 1rem;
   color: rgb(119, 119, 119);
   font-family: var(--font-noto-serif);
   font-weight: 400;
   font-style: italic;
-  line-height: 19px;
+  line-height: 1.1875rem;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 4.6875rem;
 }
 
 .section-list {
@@ -117,7 +108,7 @@ body {
 }
 
 .section-list-item {
-  width: 290px;
+  width: 18.125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,13 +117,13 @@ body {
 .section-list-item::before {
   content: "";
   display: block;
-  width: 73px;
-  height: 73px;
+  width: 4.5625rem;
+  height: 4.5625rem;
   background-repeat: no-repeat;
   background-position: center;
   border: 3px solid var(--main-color);
   border-radius: 50px;
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 .commerce-icon::before {
@@ -148,17 +139,17 @@ body {
 }
 
 .services-title {
-  font-size: 18px;
-  line-height: 21px;
-  margin-bottom: 12px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  margin-bottom: 0.75rem;
 }
 
 .services-discription {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgb(119, 119, 119);
   font-family: var(--font-roboto-slab);
   font-weight: 400;
-  line-height: 17px;
+  line-height: 1.0625rem;
 }
 
 /***********CONTACT-SECTION************/
@@ -166,58 +157,75 @@ body {
   background-color: rgb(34, 34, 34);
   background-image: url(../image/map-image.png);
   background-repeat: no-repeat;
-  background-position: right;
-}
-.contact-form {
-  padding-top: 106px;
-  padding-bottom: 115px;
-  text-align: center;
+  background-position: right bottom 18px;
+  padding-top: 6.625rem;
+  padding-bottom: 7.1875rem;
 }
 
 .form-title {
   color: rgb(255, 255, 255);
 }
 
-.contacts-form-list {
-  height: 210px;
+.contacts-form {
+  text-align: center;
+}
+
+.form-wrap {
   display: flex;
-  flex-flow: column wrap;
   justify-content: space-between;
+  margin-bottom: 1.8125rem;
+}
+
+.contacts-form-list {
+  display: flex;
+  flex-flow: column;
   align-content: space-between;
-  margin-bottom: 29px;
+}
+
+.contacts-form-list-item:nth-child(-n+2) {
+  margin-bottom: 1.6875rem;
 }
 
 .contacts-input,
 .contacts-area {
-  width: 455px;
-  height: 50px;
   border-radius: 2px;
   border: 1px solid rgb(204, 204, 204);
-  padding-left: 20px;
+  padding-left: 1.25rem;
   color: rgb(34, 34, 34);
+  width: 28.4375rem;
+}
+
+.contacts-input {
+  height: 3.125rem;
 }
 
 .contacts-area {
-  height: 210px;
   resize: none;
-  padding-top: 17px;
+  padding-top: 1.0625rem;
 }
 
 .contacts-input::placeholder,
 .contacts-area::placeholder {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: hsl(0, 0%, 73%);
   font-family: var(--font-montserrat);
   font-weight: 700;
-  line-height: 17px;
+  line-height: 1.0625rem;
   text-transform: uppercase;
 }
 
-.main-field:valid {
+.contacts-input:focus,
+.contacts-area:focus {
+  border: none;
+}
+
+.contacts-input:required:focus:valid,
+.contacts-area:required:focus:valid {
   outline: 1px solid rgb(0, 255, 0);
 }
 
-.main-field:invalid {
+.contacts-input:required:focus:invalid,
+.contacts-area:required:focus:invalid{
   outline: 1px solid rgb(255, 0, 0);
 }
 
@@ -226,10 +234,10 @@ body {
   font-size: 18px;
   color: rgb(255, 255, 255);
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.3125rem;
   text-transform: uppercase;
   background-color: var(--main-color);
-  padding: 23px 46px 25px;
+  padding: 1.4375rem 2.875rem 1.5625rem;
   border-radius: 3px;
   cursor: pointer;
-}
+} 
