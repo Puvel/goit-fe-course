@@ -50,7 +50,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 2.75rem;
-  padding-left: 0.4375rem;
 }
 
 .site-logo {
@@ -186,22 +185,27 @@ body {
   margin-bottom: 1.6875rem;
 }
 
+.contacts-form-list,
+.contacts-area {
+  width: calc(50% - 1rem);
+}
+
 .contacts-input,
 .contacts-area {
   border-radius: 2px;
   border: 1px solid rgb(204, 204, 204);
   padding-left: 1.25rem;
   color: rgb(34, 34, 34);
-  width: 28.4375rem;
 }
 
 .contacts-input {
-  height: 3.125rem;
+  width: 100%;
+  line-height: 3.125rem;
 }
 
 .contacts-area {
   resize: none;
-  padding-top: 1.0625rem;
+  padding: 1.0625rem;
 }
 
 .contacts-input::placeholder,
@@ -216,7 +220,7 @@ body {
 
 .contacts-input:focus,
 .contacts-area:focus {
-  border: none;
+  border-color: transparent;
 }
 
 .contacts-input:required:focus:valid,

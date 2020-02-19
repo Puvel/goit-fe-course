@@ -44,6 +44,10 @@ body {
   color: rgb(51, 51, 51);
 }
 
+p {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 .conteiner {
   width: 1200px;
   margin: 0 auto;
