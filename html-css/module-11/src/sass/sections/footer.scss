@@ -1,0 +1,47 @@
+.footer {
+  border-top: 1px solid rgb(229, 229, 229);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-bottom: 12px;
+
+  &__discription {
+    font-family: $font-montserrat;
+    color: $secondery-text-color;
+    @include font-settings(14px, 17px);
+    margin-top: 13px;
+
+    &-link {
+      font-family: $font-montserrat;
+      color: $line-color;
+      @include font-settings(14px, 17px);
+    }
+  }
+
+  &-btn {
+    font-family: $font-montserrat;
+    @include font-settings(14px, 17px, 700);
+    color: $first-text-color;
+    text-transform: uppercase;
+    border: none;
+    background-color: $bg-color;
+    padding: 12px 33px 11px;
+    margin-left: -5px;
+    cursor: pointer;
+  }
+}
+
+.input-area {
+  width: 230px;
+  height: 40px;
+  border: 1px solid rgb(231, 231, 231);
+  padding-left: 10px;
+  @include font-settings(15px, 24px, 300);
+  color: $secondery-text-color;
+  font-family: $font-roboto;
+  font-style: italic;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}

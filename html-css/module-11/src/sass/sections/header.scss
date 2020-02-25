@@ -1,0 +1,113 @@
+.header {
+  padding-bottom: 230px;
+  text-align: center;
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)
+    ),
+    url(../../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    @include font-settings(150px, 140px, 700);
+    color: $first-text-color;
+    text-transform: uppercase;
+    width: 850px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+
+  &__subtitle{
+    font-family: $font-kaushan;
+    @include font-settings(72px, 86px);
+    color: $first-text-color;
+    margin-bottom: 32px;
+  }
+
+  &-btn {
+    margin: 0 auto;
+    @include font-settings(14px, 17px, 700);
+    color: $first-text-color;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 3px solid $first-text-color;
+    cursor: pointer;
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: linear-gradient(
+          to top,
+          rgba(252, 227, 138, 0.9),
+          rgba(243, 129, 129, 0.9)
+        ),
+      url(../image/banner@2x.jpg);
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 157px;
+
+  &__list {
+    @include center-flex('ver');
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 640px;
+
+    &-item:not(:last-child) {
+      margin-right: 53px;
+    }
+
+    &-link {
+      color: $first-text-color;
+      @include font-settings(14px, 17px, 700);
+      @extend %link;
+      text-transform: uppercase;
+      transition: color 200ms linear;
+
+      &::after {
+        @include pseudo();
+        width: 100%;
+        height: 3px;
+        background-color: $first-accent-color;
+        margin: 0 auto;
+        margin-top: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 200ms linear;
+      }
+
+      &:hover {
+        color: $first-accent-color;
+
+        .navigation__link-icon {
+          fill: $first-accent-color;
+        }
+      }
+    }
+  }
+
+  &__list-link:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__link-icon {
+    width: 20px;
+    height: 20px;
+    fill: rgb(255, 255, 255);
+  }
+}
+
+.logo {
+  font-family: $font-montserrat;
+  color: $first-text-color;
+  @include font-settings(30px, 36px, 700);
+  padding: 29px 0;
+  @extend %link;
+}
+
